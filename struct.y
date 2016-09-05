@@ -9,8 +9,11 @@ void yyerror (char *s);
 %token identifier
 
 %%
-assignment : t_struct identifier '[' ']' '=' '{' identifier '}' ';' 
+assignment : prefix t_struct identifier '[' ']' '=' '{' identifier '}' ';' 
 				{ printf("Struct found\n"); }
+
+prefix: prefix identifier
+		| identifier
 %%
 
 int main (void)

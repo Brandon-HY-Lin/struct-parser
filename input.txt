@@ -1,1 +1,3 @@
-struct StudentDetail[] = { address } ;
+ b a aas struct StudentDetail[] = { 
+address 
+} ;

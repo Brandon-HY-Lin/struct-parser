@@ -1,1 +1,1 @@
-struct StudentDetail = { address } ;
+struct StudentDetail[] = { address } ;

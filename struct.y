@@ -18,6 +18,7 @@ prefix: prefix identifier
 		;
 
 inits: init ',' inits 
+		| init ','
 		| init
 		;
 

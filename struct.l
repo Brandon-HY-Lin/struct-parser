@@ -5,9 +5,9 @@
 %%
 
 "struct"		{printf("token: \"%s\" found\n", yytext); return t_struct; }
-[={};\[\]]			{printf("%s\n", yytext); return yytext[0]; }
+[={};\[\],]			{printf("%s\n", yytext); return yytext[0]; }
 [ \t\n]			;
-[a-zA-Z]+		{printf("%s\n", yytext); return identifier; }
+[a-zA-Z0-9_]+		{printf("%s\n", yytext); return identifier; }
 .				;
 
 %%
